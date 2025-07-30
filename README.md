@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Day 17 – Secure File Upload Pipeline with Preview, Validation & API Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of my 150-day developer preparation streak, focused on building feature-grade systems that scale across real-world products. On Day 17, I engineered a robust file upload flow — not just UI fluff, but a validated upload pipeline with full API sync and live preview.
 
-## Available Scripts
+## ✅ What I Practiced:
+- Controlled file input using `type="file"`  
+- Preview logic for images and PDFs  
+- File size restriction (max 2MB per file)  
+- Max file count restriction (limit: 3 files)  
+- Axios POST using `FormData` to backend mock/API  
+- Upload states: loading, success, error  
+- Optional drag-and-drop area with hover feedback
 
-In the project directory, you can run:
+## 🧠 Key Concepts Covered:
+- Multi-file state management in React (array of objects)  
+- Dynamic preview rendering via FileReader or URL.createObjectURL  
+- FormData setup with multiple attachments  
+- Toast notifications for API feedback  
+- UX clarity during upload and validation stage  
+- Input type safety and MIME filtering
 
-### `npm start`
+## 🛠 Features:
+- Upload .jpg, .png, or .pdf files  
+- Instant preview thumbnails or icons based on file type  
+- Validation: reject files over 2MB or beyond the limit  
+- API POST request with multipart/form-data payload  
+- Upload feedback: spinner → toast → clear/reset option  
+- Optional: Drag-and-drop zone for style upgrades  
+- Optional: Dark mode toggle for upload interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Tech Stack:
+- React.js (Hooks: useState, useEffect)  
+- Axios for API requests  
+- Tailwind CSS for layout and styling  
+- JavaScript validation logic  
+- Optional: React Dropzone or drag handler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔥 Why This Matters:
+File uploads power the backbone of portals — resumes in hiring apps, documents in KYC flows, thumbnails in e-commerce tools. This build mimics a **full product-grade upload system**, with user feedback, security, and real-time preview logic that matters in production.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Day 17 complete. Upload experience engineered — from input validation to API handshake. No filler. All product.
